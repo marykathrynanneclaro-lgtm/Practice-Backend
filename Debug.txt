@@ -1,3 +1,0 @@
-February 18 3:15pm
-    database.js
-        > Successfull connection but only returns [object Object] for connectionInstance
