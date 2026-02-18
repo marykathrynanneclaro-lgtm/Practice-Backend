@@ -1,3 +1,0 @@
-mongodb credentials:
-username: adminUser
-password: WkcfGbkcBLT9AcGw
