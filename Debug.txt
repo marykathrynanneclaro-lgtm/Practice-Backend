@@ -1,0 +1,12 @@
+February 18 
+> 3:15pm
+    database.js
+        > Successfull connection but only returns [object Object] for connectionInstance
+> 3:56pm 
+    .gitignore
+        > Accidentally pushed mongodb credentials T_T
+        > Removed the .gitignore files from cache
+        git rm --cached <file>
+        git rm -r --cached <folder>
+        git commit -m "Trying to remove files in gitignore"
+        git push
