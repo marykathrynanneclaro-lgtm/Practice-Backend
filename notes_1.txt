@@ -1,0 +1,62 @@
+Complete Backend Course | Build and Deploy Your First Production-Ready API
+    by JavaScript Mastery
+
+
+Front end
+    > The user
+    > Client - Device or App
+    > Interface - what people interact with
+
+Backend
+    > Server - store, process, and send data
+
+Device sends request to server
+Server processes data
+Server sends data back
+
+Client and servers talk to each other using PROTOCOLS (hhtps is a protocol)
+
+Finding a server needs the DNS (human readable) or IP (for computers)
+
+IPv4 & IPv6
+
+APIs
+App talk to backend? Use API (Application Programming Interface)
+API sends your request to the backend and returns the backend's data
+
+APIs have a specific structure -> CRUD (Create, Read, Update, Delete)
+    > Uses HTTP methods (get, post, put, delete)
+    > Endpoints - URL that represents a specific resource/action (get/user/data, post/user, put/user, delete/user) *remember REST APIs sa college*
+    > Headers - containes extra data like metadata, datatype, etc.
+    > Request Body - details of data other thn request
+    > Response Bodt - response of server that contains details of data
+    > Status Codes - indicate what happened
+
+^^^ This is what the request from the client looks like ^^^
+
+Types of APIs
+    1. RESTful API (Representational State Transfer) - Stateless, does not rely on previous requests (uses JSON)
+    2. GraphQL APIs - (made by FB) Gives more flexibility (request EXACTLY the data)
+
+BACKEND LANGUAGE
+    > Javascript, Python, etc.
+    > Use frameworks for easier implementation of server (expres, django, etc.)
+
+DATABASES
+    > Stores data, easier if applications are scaled
+    1. Relational Databases - (SQL, data like excel) HIGHLY STRUCTURED (inventory management, e-commerece)
+    2. Non-relational databases - (NoSQL) Offers more flexibility, structured and unstructured data
+
+How can backend interact with backend?
+
+Client -> Backend -> Processes data and creates a query -> Backend sends queries to database
+
+ORMs - (Object Relational Mappers) simplify database interactions, write queries using chosen language
+
+BACKEND ARCHITECTURES
+    1. Monolithic - all components are combined into one unified codebase, backend handles EVERYTHING
+        - simple to develop, deploy, and debug BUT can be messy and have scalability issues
+    2. Microservices - app is broken down into individual services, communicate with each other via API
+        - great for large scale systems
+    3. Serverless - write code and dont worry about underlying infrastructure (aws lamda)
+        - perfect for startups, prototyping, spikey traffic

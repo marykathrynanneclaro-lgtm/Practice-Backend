@@ -1,0 +1,16 @@
+INTRO TO BACKEND DEVELOPMENT - NODE.JS & EXPRESS TUTORIAL FOR BEGGINERS
+by freeCodeCamp.org
+
+Core components
+1. Programming Language (Use JS)
+2. Database - Check notes_1 for notes on databases
+3. Runtime Environment - NodeJS
+4. Framework - toolkit for development (Express, Djanogo, Laravel)
+
+BACKEND SERVER
+Javascript -> NodeJS -> ExpressJS -> Database
+(Code/Instructions) -> (Engine) -> (Structure/Toolkit) -> (Stores data)
+
+Frontend connects to backend using API
+Request (req) -> user 
+Response (res) -> server
