@@ -23,14 +23,14 @@ const registerUser = async (req, res) => {
         //Create user
         const user = await User.create({
             username,
-            email: email.toLowerCase,
+            email: email.toLowerCase(),
             password,
             loggedIn: false
         })
         res.status(201).json({message: "User Registered",
-            user: {id, email: user.email, username: user.name}
+            user: {id: user._id, email: user.email, username: user.username}
         })
-    } catch {
+    } catch (error){
         res.status(500).json({message: "Internal Server Error", error: error.message})
     }
 }
