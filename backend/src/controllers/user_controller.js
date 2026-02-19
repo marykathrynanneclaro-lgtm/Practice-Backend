@@ -35,6 +35,40 @@ const registerUser = async (req, res) => {
     }
 }
 
+const loginUser = async (req,res) => {
+    try {
+        //Check if user already exists
+        const {email, password} = req.body
+
+        const user = await User.findOne({
+            email: email.toLowerCase()
+        })
+
+        if (!user) {return res.status(400).json({
+            message: "User Not Found!"
+        })}
+
+        //Compare Passsords
+        const isMatch = await user.comparePassword(password)
+        if (!isMatch) {
+            return res.status(400).json({message: "Wrong Password"})
+        }
+
+        res.status(200).json({message: "User Logged In",
+            user: {
+                id: user._id,
+                email: user.email,
+                username: user.username
+            }
+        })
+    } catch (error) {
+        res.status(500).json({
+            message: "Internal Server Error", error: error.message
+        })
+    }
+}
+
 export {
-    registerUser
+    registerUser,
+    loginUser
 }
