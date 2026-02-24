@@ -12,9 +12,11 @@ app.use(express.json()) //Parse json request client-side
 
 //Routes import
 import userRouter from './routes/user_route.js'
+import postRouter from './routes/post_route.js'
 
 //Routes declaration
 app.use("/api/v1/users", userRouter) //Example route: http://localhost:3000/api/v1/users/register
+app.use("/api/v1/post", postRouter)
 
 export default app
 /*
