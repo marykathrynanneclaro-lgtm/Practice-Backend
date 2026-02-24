@@ -1,10 +1,11 @@
 import { Router} from 'express'
 //Router is the tool we need to use from express
-import {loginUser, registerUser} from '../controllers/user_controller.js'
+import {loginUser, logoutUser, registerUser} from '../controllers/user_controller.js'
 const router = Router()
 
 router.route('/register').post(registerUser) //post is HTTP methods
 router.route('/login').post(loginUser)
+router.route('/logout').post(logoutUser)
 
 export default router
 /*
